@@ -18,7 +18,7 @@
 		<link>
 			<name>lucene-analyzers-common-6.3.0.jar</name>
 			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Downloads/lucene-6.3.0/lucene-6.3.0/analysis/common/lucene-analyzers-common-6.3.0.jar</locationURI>
+			<locationURI>PROJECT_LOC/lucene/lucene-analyzers-common-6.3.0.jar</locationURI>
 		</link>
 		<link>
 			<name>lucene-core-6.3.0.jar</name>
