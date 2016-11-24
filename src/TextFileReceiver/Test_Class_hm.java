@@ -122,6 +122,7 @@ public class Test_Class_hm {
 		IndexWriterConfig config = new IndexWriterConfig(analyzer);
 
 		writer = new IndexWriter(dir, config);
+		writer.deleteAll();
 	}
 
 	/**
