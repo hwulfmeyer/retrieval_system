@@ -16,6 +16,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>jsoup-1.10.1.jar</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/libraries/jsoup-1.10.1.jar</locationURI>
+		</link>
+		<link>
 			<name>lucene-analyzers-common-6.3.0.jar</name>
 			<type>1</type>
 			<locationURI>PROJECT_LOC/lucene/lucene-analyzers-common-6.3.0.jar</locationURI>
