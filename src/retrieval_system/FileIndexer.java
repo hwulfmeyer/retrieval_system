@@ -6,7 +6,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Paths;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -35,7 +34,6 @@ import org.apache.lucene.analysis.custom.CustomAnalyzer;
 import org.apache.lucene.analysis.en.PorterStemFilterFactory;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 @SuppressWarnings("deprecation")
 public class FileIndexer {
@@ -53,7 +51,6 @@ public class FileIndexer {
 		File f = new File(System.getProperty("java.class.path"));
 		File filePath = f.getAbsoluteFile().getParentFile();
 		String path = filePath.toString();
-		path = "c:\\Users\\hyperion\\Documents\\GitHub\\retrieval_system\\documents";
 		indexPath = path;
 		FSDirectory dir = FSDirectory.open(Paths.get(path));
 		IndexWriterConfig config = new IndexWriterConfig(mAnal);
@@ -148,7 +145,7 @@ public class FileIndexer {
 
 	public static void main(String[] args) throws IOException, ParseException {
 		FileIndexer indexer = new FileIndexer();
-		indexer.indexDirectory("c:\\Users\\hyperion\\Documents\\GitHub\\retrieval_system\\documents");
+		indexer.indexDirectory(args[0]);
 		System.out.println("Indexed " + indexer.mWriter.numDocs() + " documents.");
 		indexer.mWriter.close();
 
