@@ -155,11 +155,15 @@ public class FileIndexer {
 
 			System.out.println("\nSearch Query (yx = exit):");
 			queryInput = bufreader.readLine();
-
-			if (queryInput.equalsIgnoreCase("yx")) {
+			if(queryInput.startsWith(" ")){
+				System.out.println("Error: Wrong Input!");
+			}
+			else if (queryInput.equalsIgnoreCase("yx")) {
 				break;
 			}
-			indexer.search(queryInput);
+			else {
+				indexer.search(queryInput);
+			}
 		}
 
 	}
