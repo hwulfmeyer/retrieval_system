@@ -1,6 +1,6 @@
 # retrieval_system
 
-## dope stuff about lucene and shit ##
+## stuff about lucene ##
 
 * [lucene tutorial](http://www.lucenetutorial.com/your-first-project.html)
 * [lucene documentation](http://lucene.apache.org/core/6_3_0/index.html)
